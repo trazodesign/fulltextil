@@ -20,26 +20,28 @@
 
     <title>FullTextil</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar-scroll">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark pt-4">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark pt-4 sidebarNavigation" data-sidebarClass="navbar-dark bg-dark" id="navbar-scroll">
+      <div class="container" id="inicio">
         <a class="navbar-brand" href="#">
           <img src="img/fulltextil-logo.svg" width="260" height="auto" class="d-inline-block align-top" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler leftNavbarToggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#">Inicio</a>
-            <a class="nav-item nav-link" href="#">Productos</a>
+            <a class="nav-item nav-link" href="#inicio">Inicio</a>
+            <a class="nav-item nav-link" href="#clients">Productos</a>
             <a class="nav-item nav-link" href="#">Testimonios</a>
             <a class="nav-item nav-link mr-4" href="#">Contacto</a>
-            <a class="nav-item btn-circle mr-5 ml-5" href="tel:+56232488232">
+            <a class="nav-item nav-link tel-mobile d-lg-none" href="#"><i class="fas fa-phone mr-2"></i>Llamanos: +56 2324 88232</a>
+            <a class="nav-item nav-link wht-mobile d-lg-none" href="#"><i class="fab fa-whatsapp mr-2"></i>Whatsapp: : +56 2324 88232</a>
+            <a class="nav-item btn-circle mr-5 ml-5 d-none d-lg-block" href="tel:+56232488232">
               <i class="fas fa-phone bg-primary"></i>
             </a>
-            <a class="nav-item btn-circle ml-4" href="https://web.whatsapp.com/send?phone=+56232488232&text=Mensaje%20de%20la%20web%20de%20FullTextil">
+            <a class="nav-item btn-circle ml-4 d-none d-lg-block" href="https://web.whatsapp.com/send?phone=+56232488232&text=Mensaje%20de%20la%20web%20de%20FullTextil">
               <i class="fab fa-whatsapp fa-lg bg-success"></i>
             </a>
           </div>
@@ -52,7 +54,7 @@
       <div class="container">
         <div class="row">
           <!-- Contenido -->
-          <div class="col-md-6">
+          <div class="col-lg-6 full-width">
             <h1>
               Soluciones<br>
               Publicitarias
@@ -63,7 +65,7 @@
             <a href="#" class="btn btn-primary btn-lg">Mira nuestros productos</a>
           </div>
           <!-- Formulario -->
-          <div class="col-md-6">
+          <div class="col-lg-6 d-none d-lg-block">
             <div class="form-box p-4">
               <h2 class="text-center">Cotiza con Nosotros</h2>
               <ul class="text-center d-flex justify-content-center mb-4">
@@ -101,10 +103,339 @@
       </div>
     </header>
 
+    <section id="clients">
+      <div class="container">
+        <img src="img/sercotec.svg" alt="SERCOTEC" class="img-fluid">
+        <img src="img/mercado-publico.svg" alt="Mercado Público" class="img-fluid">
+        <img src="img/corfo.svg" alt="CORFO" class="img-fluid">
+        <img src="img/patagonman.svg" alt="Patagonman" class="img-fluid">
+        <img src="img/terrafirma.svg" alt="Terrafirma" class="img-fluid">
+        <img src="img/montenbaik.svg" alt="Monten Baik" class="img-fluid">
+      </div>
+    </section>
+
+    <section id="productos">
+      <div class="container">
+        <h2 class="text-center mb-3">En Fulltextil creamos<br>productos de alto impacto</h2>
+        <p class="text-center">Para eventos en exterior e interior. Te ayudamos a diseñar y elegir la mejor opción para tu marca. Asesoramos a nuestros clientes en la selección de diseño y producto para cumplir los objetivos de su marca o evento.</p>
+
+        <div class="product-row">
+          <div class="product-item">
+            <img src="img/costura.svg" alt="Costura Doble">
+            <h4>Costura Doble</h4>
+          </div>
+          <div class="product-item">
+            <img src="img/proteccion.svg" alt="Protección UV">
+            <h4>Protección UV</h4>
+          </div>
+          <div class="product-item">
+            <img src="img/impermeable.svg" alt="100% Impermeable">
+            <h4>100% Impermeable</h4>
+          </div>
+          <div class="product-item">
+            <img src="img/impresion.svg" alt="Full Impresión">
+            <h4>Full Impresión</h4>
+          </div>
+          <div class="product-item">
+            <img src="img/armado.svg" alt="Fácil Armado">
+            <h4>Fácil Armado</h4>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="img/fulltextil_toldo.jpg" alt="Toldo Publicitario" class="img-fluid">
+          </div>
+          <div class="col-lg-6 content-center">
+            <h3 class="mb-3">Toldo Publicitario</h3>
+            <p class="mb-4">La mejor manera de configurar el área de su marca en un evento es con nuestros toldos publicitarios. Disponemos de calidades de clase mundial, techo de lona impermeable con filtros, opción de personalización según diseño de su marca, confección de muro completo, muro medio cuerpo, puerta y ventana. Nuestros toldos publicitarios están diseñados para ser fácil de usar y resistir el paso del tiempo.</p>
+            <a href="#" class="btn btn-primary btn-lg">Más Información</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 content-center">
+            <h3 class="mb-3">Carpa Iglú Publicitaria</h3>
+            <p class="mb-4">Impacto visual al instante, nuestras carpas iglú publicitarias son creadas con las mejores lonas poliéster y tratamientos contra rayos UV del mercado. La confección con doble costura, estructura firme, fácil armado y aplicación de logos hace un producto que no puede faltar en tu evento.</p>
+            <a href="#" class="btn btn-primary btn-lg">Más Información</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="img/fulltextil_carpa_Iglu.jpg" alt="Carpa Iglú Publicitaria" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="img/fulltextil_bandera_vela.jpg" alt="Bandera Publicitaria" class="img-fluid">
+          </div>
+          <div class="col-lg-6 content-center">
+            <h3 class="mb-3">Bandera Publicitaria</h3>
+            <p class="mb-4">Versátil, fácil armado, visibilidad de marca 100%, estas son las grandes características que pueden ofrecer nuestras banderas publicitarias. Confeccionadas con telas de alta resistencia, impresión directa, traspaso de tinta 90% y elástico con doble costura. Lleva tu marca donde quieras y cuando quieras con este producto de alto impacto visual.</p>
+            <a href="#" class="btn btn-primary btn-lg">Más Información</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 content-center">
+            <h3 class="mb-3">Carpa Araña</h3>
+            <p class="mb-4">Tienen el doble propósito de proporcionar tanto una marca llamativa como un refugio. Son ideales para promociones, festivales y eventos deportivos, además de ser una excelente alternativa a una marquesina o tienda de campaña estándar. Nuestras Carpas Arañas están confeccionadas de poliéster de alta calidad y resistentes a todo tipo de clima.</p>
+            <a href="#" class="btn btn-primary btn-lg">Más Información</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="img/fulltextil_carpa_araña.jpg" alt="Carpa Araña" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="img/meta_inflable.jpg" alt="Meta Inflable" class="img-fluid">
+          </div>
+          <div class="col-lg-6 content-center">
+            <h3 class="mb-3">Meta Inflable</h3>
+            <p class="mb-4">Producto protagonista en corridas de todo tipo de eventos. Tu marca será visible tanto en sus caras frontales y posteriores. El fácil armado y movilidad es de ayuda para su activación en cualquier terreno. Su motor interno la mantendrá inflable todo el tiempo que necesites.</p>
+            <a href="#" class="btn btn-primary btn-lg">Más Información</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 content-center">
+            <h3 class="mb-3">Panel Araña</h3>
+            <p class="mb-4">Ofrece versatilidad y una gran área visual para la marca. Su fácil armado y traslado lo hace un producto ideal para ferias comerciales, presentaciones, reuniones de prensa y lanzamientos de productos. El proceso full impresión en tela sin uniones, permite tener gráficas hasta 6 metros de largo con 2 metros de alto.</p>
+            <a href="#" class="btn btn-primary btn-lg">Más Información</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="img/fulltextil_panel_araña.jpg" alt="Panel Araña" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="img/fulltextil_impresión_digital.jpg" alt="Impresión Digital" class="img-fluid">
+          </div>
+          <div class="col-lg-6 content-center">
+            <h3 class="mb-3">Impresión Digital</h3>
+            <p class="mb-4">En Fulltextil contamos con una amplia gama de sustratos blandos y rígidos para publicidad. Impresiones con tintas eco-solventes y UV para mayor vida a tu material exterior e interior. Nuestro objetivo es solucionar cada necesidad de tu marca o negocio.</p>
+            <a href="#" class="btn btn-primary btn-lg">Más Información</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="video">
+      <div class="container">
+        <h3>Armado de Productos</h3>
+        <p>Disponemos de una variedad de productos publicitarios para exterior</p>
+        <div class="video-cover">
+          <div class="play-btn">
+            <img src="img/play-btn.svg" alt="Botón Play" class="img-fluid">
+          </div>
+          <img src="img/video-cover.png" alt="Vídeo" class="img-fluid">
+        </div>
+      </div>
+    </section>
+
+
+    <section id="testimonios">
+      <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <!-- Testimonios Row 1 -->
+                  <div class="container">
+                      <div class="row">
+              
+                        <div class="col-md-4">
+                          <div class="testimonio-box">
+                              <img src="img/opinion_montenbaik_d.svg" alt="Monten Baik Logo">
+                              <blockquote>“El haber trabajado con Fulltextil, nos ayudó a cumplir con los tiempos y presencia imponente para la marca. Su carpa iglú pasaron la prueba de fuertes lluvias y sol en este MONTENBAIK ENDURO SERIES 2018. Las recomiendo al 100%”</blockquote>
+                              <small>Pedro Barroso - Montein Baik</small>
+                          </div>
+                        </div>
+              
+                        <div class="col-md-4">
+                          <div class="testimonio-box">
+                              <img src="img/opinion_montenbaik_d.svg" alt="Monten Baik Logo">
+                              <blockquote>“El haber trabajado con Fulltextil, nos ayudó a cumplir con los tiempos y presencia imponente para la marca. Su carpa iglú pasaron la prueba de fuertes lluvias y sol en este MONTENBAIK ENDURO SERIES 2018. Las recomiendo al 100%”</blockquote>
+                              <small>Pedro Barroso - Montein Baik</small>
+                          </div>
+                        </div>
+              
+                        <div class="col-md-4">
+                          <div class="testimonio-box">
+                              <img src="img/opinion_montenbaik_d.svg" alt="Monten Baik Logo">
+                              <blockquote>“El haber trabajado con Fulltextil, nos ayudó a cumplir con los tiempos y presencia imponente para la marca. Su carpa iglú pasaron la prueba de fuertes lluvias y sol en este MONTENBAIK ENDURO SERIES 2018. Las recomiendo al 100%”</blockquote>
+                              <small>Pedro Barroso - Montein Baik</small>
+                          </div>
+                        </div>
+              
+                      </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <!-- Testimonios Row 2 -->
+                  <div class="container">
+                      <div class="row">
+              
+                        <div class="col-md-4">
+                          <div class="testimonio-box">
+                              <img src="img/opinion_montenbaik_d.svg" alt="Monten Baik Logo">
+                              <blockquote>“El haber trabajado con Fulltextil, nos ayudó a cumplir con los tiempos y presencia imponente para la marca. Su carpa iglú pasaron la prueba de fuertes lluvias y sol en este MONTENBAIK ENDURO SERIES 2018. Las recomiendo al 100%”</blockquote>
+                              <small>Pedro Barroso - Montein Baik</small>
+                          </div>
+                        </div>
+              
+                        <div class="col-md-4">
+                          <div class="testimonio-box">
+                              <img src="img/opinion_montenbaik_d.svg" alt="Monten Baik Logo">
+                              <blockquote>“El haber trabajado con Fulltextil, nos ayudó a cumplir con los tiempos y presencia imponente para la marca. Su carpa iglú pasaron la prueba de fuertes lluvias y sol en este MONTENBAIK ENDURO SERIES 2018. Las recomiendo al 100%”</blockquote>
+                              <small>Pedro Barroso - Montein Baik</small>
+                          </div>
+                        </div>
+              
+                        <div class="col-md-4">
+                          <div class="testimonio-box">
+                              <img src="img/opinion_montenbaik_d.svg" alt="Monten Baik Logo">
+                              <blockquote>“El haber trabajado con Fulltextil, nos ayudó a cumplir con los tiempos y presencia imponente para la marca. Su carpa iglú pasaron la prueba de fuertes lluvias y sol en este MONTENBAIK ENDURO SERIES 2018. Las recomiendo al 100%”</blockquote>
+                              <small>Pedro Barroso - Montein Baik</small>
+                          </div>
+                        </div>
+              
+                      </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <!-- Testimonios Ro3 3 -->
+                  <div class="container">
+                      <div class="row">
+              
+                        <div class="col-md-4">
+                          <div class="testimonio-box">
+                              <img src="img/opinion_montenbaik_d.svg" alt="Monten Baik Logo">
+                              <blockquote>“El haber trabajado con Fulltextil, nos ayudó a cumplir con los tiempos y presencia imponente para la marca. Su carpa iglú pasaron la prueba de fuertes lluvias y sol en este MONTENBAIK ENDURO SERIES 2018. Las recomiendo al 100%”</blockquote>
+                              <small>Pedro Barroso - Montein Baik</small>
+                          </div>
+                        </div>
+              
+                        <div class="col-md-4">
+                          <div class="testimonio-box">
+                              <img src="img/opinion_montenbaik_d.svg" alt="Monten Baik Logo">
+                              <blockquote>“El haber trabajado con Fulltextil, nos ayudó a cumplir con los tiempos y presencia imponente para la marca. Su carpa iglú pasaron la prueba de fuertes lluvias y sol en este MONTENBAIK ENDURO SERIES 2018. Las recomiendo al 100%”</blockquote>
+                              <small>Pedro Barroso - Montein Baik</small>
+                          </div>
+                        </div>
+              
+                        <div class="col-md-4">
+                          <div class="testimonio-box">
+                              <img src="img/opinion_montenbaik_d.svg" alt="Monten Baik Logo">
+                              <blockquote>“El haber trabajado con Fulltextil, nos ayudó a cumplir con los tiempos y presencia imponente para la marca. Su carpa iglú pasaron la prueba de fuertes lluvias y sol en este MONTENBAIK ENDURO SERIES 2018. Las recomiendo al 100%”</blockquote>
+                              <small>Pedro Barroso - Montein Baik</small>
+                          </div>
+                        </div>
+              
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a> -->
+            </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="container">
+        <div class="row">
+          <!-- Contenido -->
+          <div class="col-lg-6 content-center">
+            <h2 class="text-white mb-3">
+                Cotiza con Nosotros
+            </h2>
+            <p class="text-white mb-3">
+                Creamos productos de alto impacto. Te ayudamos a diseñar y elegir la mejor opción para tu marca.
+            </p>
+            <ul class="text-center d-flex text-white">
+              <li class="mr-3">Carpas Iglú</li>
+              <li class="mr-3">Banderas</li>
+              <li class="mr-3">Toldos</li>
+              <li>Metas Inflables</li>
+          </div>
+          <!-- Formulario -->
+          <div class="col-lg-6">
+            <div class="form-box p-4">
+              
+              <form action="https://formspree.io/ventas@fulltextil.cl" method="POST">
+                <div class="form-group mb-4">
+                  <input type="text" class="form-control" placeholder="Nombre y Apellido" name="nombre">
+                </div>  
+                <div class="form-group mb-4">
+                  <input type="email" class="form-control" placeholder="Email" name="email">
+                </div> 
+                <div class="row form-group mb-4">                                    
+                  <div class="col">
+                    <input type="tel" class="form-control" placeholder="Teléfono" name="telefono">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Empresa" name="empresa">
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <textarea class="form-control" rows="3" placeholder="Mensaje" name="mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Enviar Mensaje Ahora
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+
+          <ul class="social-icons pt-5">
+            <li><a href="#"><img src="img/icon-youtube.svg" alt="Youtube"></a></li>
+            <li><a href="#"><img src="img/icon-instagram.svg" alt="Instagram"></a></li>
+            <li><a href="#"><img src="img/icon-facebook.svg" alt="Facebook"></a></li>
+          </ul>
+
+          <div class="content py-3">
+            <p class="text-center">
+                Av Libertador Bernardo O’Higgins 1302, Santiago, Región<br>
+                Teléfono: +56 2 3248 8232<br>
+                Whatsapp: +56 9 5763 5666
+            </p>
+          </div>
+
+          <hr>
+
+          <div class="copy py-3 text-center">
+            <p>&copy; 2019 <a href="index.html">Fulltextil.cl</a> Todos los derechos reservados.</p>
+          </div>
+
+      </div>
+    </footer>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- Side Menu -->
+    <script src="js/side-menu.js"></script>
   </body>
 </html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107" height="107" viewBox="0 0 107 107">
+  <defs>
+    <filter id="Ellipse_7" x="0" y="0" width="107" height="107" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon-youtube" transform="translate(-561.5 -6830.5)">
+    <g transform="matrix(1, 0, 0, 1, 561.5, 6830.5)" filter="url(#Ellipse_7)">
+      <circle id="Ellipse_7-2" data-name="Ellipse 7" cx="16" cy="16" r="16" transform="translate(37.5 27.5)" fill="red"/>
+    </g>
+    <path id="youtube-brands_1_" data-name="youtube-brands (1)" d="M34.515,66.2a2.513,2.513,0,0,0-1.768-1.78C31.187,64,24.933,64,24.933,64s-6.254,0-7.814.421a2.513,2.513,0,0,0-1.768,1.78,28.295,28.295,0,0,0,0,9.69,2.476,2.476,0,0,0,1.768,1.751c1.56.421,7.814.421,7.814.421s6.254,0,7.814-.421a2.476,2.476,0,0,0,1.768-1.751,28.3,28.3,0,0,0,0-9.69ZM22.888,74.019V68.072l5.227,2.974-5.227,2.974Z" transform="translate(590.067 6803)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107" height="107" viewBox="0 0 107 107">
+  <defs>
+    <filter id="Ellipse_9" x="0" y="0" width="107" height="107" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon-facebook" transform="translate(-697.5 -6830.5)">
+    <g transform="matrix(1, 0, 0, 1, 697.5, 6830.5)" filter="url(#Ellipse_9)">
+      <circle id="Ellipse_9-2" data-name="Ellipse 9" cx="16" cy="16" r="16" transform="translate(37.5 27.5)" fill="#3b5998"/>
+    </g>
+    <path id="facebook-f-brands_1_" data-name="facebook-f-brands (1)" d="M8.43,3.32h1.883V.141A25.154,25.154,0,0,0,7.57,0C4.855,0,3,1.656,3,4.7V7.5H0v3.555H3V20H6.668V11.055H9.543L10,7.5H6.668V5.051C6.668,4.023,6.953,3.32,8.43,3.32Z" transform="translate(746 6864)" fill="#fff"/>
+  </g>
+</svg>
