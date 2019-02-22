@@ -44,3 +44,13 @@ $(document).ready(function () {
       }
     })
 })
+
+var scrollLink = $('.scroll');
+
+// SMOOTH SCROLLING AND ACTIVE LINK
+$('.nav-link, .scroll').click(function() {
+    var sectionTo = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(sectionTo).offset().top - 100
+    }, 1500);
+});

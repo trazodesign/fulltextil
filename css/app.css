@@ -7639,6 +7639,16 @@ h4 {
   background-color: #237598 !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); }
 
+.navbar-dark .navbar-nav .nav-link:link,
+.navbar-dark .navbar-nav .nav-link:visited,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:active {
+  color: white;
+  opacity: .8; }
+
+@media (max-width: 414px) {
+  h2 {
+    font-size: 38px; } }
 nav.navbar {
   z-index: 9999; }
 nav a {
@@ -7674,6 +7684,10 @@ nav a {
 
   nav.bg-dark {
     background-color: #237598 !important; } }
+@media (max-width: 380px) {
+  .navbar-brand img {
+    width: 180px;
+    height: auto; } }
 .overlay,
 .sideMenu {
   position: fixed;
@@ -7771,7 +7785,10 @@ header {
       width: 100%; } }
 @media (max-width: 325px) {
   header h1 {
-    font-size: 50px; } }
+    font-size: 50px; }
+
+  h2 {
+    font-size: 40px; } }
 #clients {
   width: 100%;
   height: auto;
@@ -7836,6 +7853,16 @@ header {
   .product-item img {
     margin-bottom: 20px; }
 
+@media (max-width: 768px) {
+  .content-center {
+    align-items: center;
+    text-align: center; }
+
+  .product-row {
+    flex-direction: column; }
+
+  .product-item:not(:last-child) {
+    margin-bottom: 30px; } }
 #video {
   width: 100%;
   height: 610px;
@@ -7860,13 +7887,18 @@ header {
         top: 40%;
         left: 47.5%; }
 
+@media (max-width: 414px) {
+  #video .video-cover .play-btn {
+    top: 35% !important;
+    left: 40% !important; } }
 #testimonios {
   margin-top: 200px; }
   #testimonios .testimonio-box {
+    height: 280px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.16);
-    padding: 40px;
+    padding: 25px;
     text-align: center; }
     #testimonios .testimonio-box:not(:last-child) {
       margin-right: 40px; }
@@ -7886,14 +7918,26 @@ header {
 .carousel-indicators li {
   background-color: #29ABE2; }
 
+@media (max-width: 768px) {
+  #testimonios {
+    margin-top: 50px; } }
+@media (max-width: 380px) {
+  #testimonios .testimonio-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #testimonios .testimonio-box blockquote {
+      margin-bottom: 10px; } }
 #contacto {
   width: 100%;
-  height: 610px;
+  height: 100%;
   background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/contacto-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-top: 80px;
+  padding: 80px 0;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -7904,10 +7948,17 @@ header {
   #contacto .form-box {
     margin-top: 0; }
 
+@media (max-width: 380px) {
+  #contacto .btn {
+    font-size: 12px !important; } }
+footer {
+  font-size: 16px; }
+
 .social-icons {
   list-style: none;
   display: flex;
-  justify-content: center;
-  margin: 0; }
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-bottom: 80px; }
 
 /*# sourceMappingURL=app.css.map */
