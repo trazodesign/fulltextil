@@ -129,16 +129,16 @@
                 <li>Metas Inflables</li>
               </ul>
 
-              <form action="https://formspree.io/ventas@fulltextil.cl" method="POST">
+              <form accept-charset="UTF-8" action="https://formspree.io/mglkbeox" method="POST">
                 <div class="form-group mb-4">
-                  <input type="text" class="form-control" placeholder="Nombre y Apellido" name="nombre">
+                  <input type="text" class="form-control" placeholder="Nombre y Apellido" name="nombre" required>
                 </div>  
                 <div class="form-group mb-4">
-                  <input type="email" class="form-control" placeholder="Email" name="email">
+                  <input type="email" class="form-control" placeholder="Email" name="email" required>
                 </div> 
                 <div class="row form-group mb-4">                                    
                   <div class="col">
-                    <input type="tel" class="form-control" placeholder="Teléfono" name="telefono">
+                    <input type="tel" class="form-control" placeholder="Teléfono" name="telefono" required>
                   </div>
                   <div class="col">
                     <input type="text" class="form-control" placeholder="Empresa" name="empresa">
@@ -147,7 +147,9 @@
                 <div class="form-group mb-4">
                   <textarea class="form-control" rows="3" placeholder="Mensaje" name="mensaje"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">
+                <!-- Redirección -->
+                <input type="hidden" name="_next" value="https://www.fulltextil.cl/">
+                <button type="submit" name="submit" class="btn btn-primary btn-block">
                   Enviar Mensaje Ahora
                 </button>
               </form>
@@ -465,14 +467,14 @@
               
               <form action="https://formspree.io/ventas@fulltextil.cl" method="POST">
                 <div class="form-group mb-4">
-                  <input type="text" class="form-control" placeholder="Nombre y Apellido" name="nombre">
+                  <input type="text" class="form-control" placeholder="Nombre y Apellido" name="nombre" required>
                 </div>  
                 <div class="form-group mb-4">
-                  <input type="email" class="form-control" placeholder="Email" name="email">
+                  <input type="email" class="form-control" placeholder="Email" name="email" required>
                 </div> 
                 <div class="row form-group mb-4">                                    
                   <div class="col">
-                    <input type="tel" class="form-control" placeholder="Teléfono" name="telefono">
+                    <input type="tel" class="form-control" placeholder="Teléfono" name="telefono" required>
                   </div>
                   <div class="col">
                     <input type="text" class="form-control" placeholder="Empresa" name="empresa">
@@ -541,6 +543,15 @@
     </script>
     <!-- Side Menu -->
     <script src="js/side-menu.js"></script>
+
+    <!-- FormSpree -->
+    <script>
+      var form = document.querySelector('form')
+      var data = new FormData(form)
+      var req = new XMLHttpRequest()
+      req.open(form.method, form.action)
+      req.send(data)
+    </script>
 
     <!-- Tawk.to Script -->
     <script type="text/javascript">
