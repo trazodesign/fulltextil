@@ -7617,6 +7617,10 @@ h3 {
 h4 {
   font-size: 18px; }
 
+.row-no-margin {
+  margin-right: 0;
+  margin-left: 0; }
+
 .btn {
   font-size: 12px;
   text-transform: uppercase;
@@ -7645,6 +7649,9 @@ h4 {
 .navbar-dark .navbar-nav .nav-link:active {
   color: white;
   opacity: .8; }
+
+.fondo-gris {
+  background-color: #fafafa !important; }
 
 @media (max-width: 414px) {
   h2 {
@@ -7679,11 +7686,23 @@ nav a {
         opacity: .8; }
 
 @media (max-width: 990px) {
-  .navbar-nav {
-    margin-top: 100px; }
+  ul.navbar-nav {
+    margin-top: 100px !important; }
 
   nav.bg-dark {
-    background-color: #237598 !important; } }
+    background-color: #237598 !important; }
+
+  .dropdown-menu {
+    display: block;
+    font-size: .8rem;
+    color: transparent;
+    background-color: transparent;
+    border: none; }
+    .dropdown-menu a.dropdown-item {
+      color: #61d0ff !important;
+      text-transform: uppercase; }
+      .dropdown-menu a.dropdown-item:focus {
+        background: transparent; } }
 @media (max-width: 380px) {
   .navbar-brand img {
     width: 180px;
@@ -7960,5 +7979,126 @@ footer {
   justify-content: space-between;
   margin-left: 50px;
   margin-bottom: 80px; }
+
+#banderas,
+#trabajos {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+#banderas img,
+#trabajos img {
+  margin: 0 auto; }
+
+#bandera-header {
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/banderas-header-bg.jpg") !important; }
+
+.contacto-bandera {
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/banderas-footer-bg.jpg") !important; }
+
+#medidas {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/medidas-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  #medidas .container {
+    padding: 80px 0; }
+    #medidas .container h3 {
+      text-align: left;
+      color: white; }
+    #medidas .container p {
+      text-align: left;
+      color: white; }
+
+.medidas-carpa-iglu {
+  padding: 100px 0; }
+
+#bases {
+  width: 100%;
+  height: auto;
+  background-color: white; }
+  #bases .container {
+    padding: 80px 0; }
+    #bases .container h3 {
+      text-align: left; }
+    #bases .container p {
+      text-align: left; }
+    #bases .container ul {
+      list-style: none;
+      margin-left: -40px; }
+      #bases .container ul li:not(:last-child) {
+        margin-bottom: 10px; }
+
+#mastil {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/mastil_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  #mastil .container {
+    padding: 80px 0; }
+    #mastil .container h3 {
+      text-align: left;
+      color: white; }
+    #mastil .container p {
+      text-align: left;
+      color: white; }
+
+#diseno {
+  width: 100%;
+  height: auto;
+  background-color: white; }
+  #diseno .container {
+    padding: 120px 0; }
+    #diseno .container h3 {
+      text-align: left; }
+    #diseno .container p {
+      text-align: left; }
+
+#impresion {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/impresion_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  #impresion .container {
+    padding: 80px 0; }
+    #impresion .container h3 {
+      text-align: left;
+      color: white; }
+    #impresion .container p {
+      text-align: left;
+      color: white; }
+
+@media (max-width: 768px) {
+  #medidas p,
+  #bases p,
+  #mastil p,
+  #diseno p,
+  #impresion p {
+    text-align: center !important; } }
+@media (max-width: 550px) {
+  #bases h3 {
+    margin-top: 50px; } }
+#carpa-iglu-header {
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/fulltextil-carpas-iglu-bg01.jpg") !important; }
+
+.carpa-bg02 {
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/fulltextil-carpas-iglu-bg02.jpg") !important; }
+
+.carpa-bg03 {
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/fulltextil-carpas-iglu-bg03.jpg") !important; }
+
+.carpa-bg04 {
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/fulltextil-carpas-iglu-bg04.jpg") !important; }
+
+.carpa-bg05 {
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/fulltextil-carpas-iglu-bg05.jpg") !important; }
+
+.contacto-carpa-iglu {
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/fulltextil-carpas-iglu-bg06.jpg") !important; }
 
 /*# sourceMappingURL=app.css.map */
