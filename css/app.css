@@ -7911,7 +7911,8 @@ header {
     top: 35% !important;
     left: 40% !important; } }
 #testimonios {
-  margin-top: 200px; }
+  margin-top: 200px;
+  margin-bottom: 50px; }
   #testimonios .testimonio-box {
     height: 280px;
     background-color: white;
@@ -7955,7 +7956,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-top: 80px;
+  margin-top: 0px;
   padding: 80px 0;
   display: flex;
   justify-content: center;
@@ -8084,7 +8085,7 @@ footer {
   #bases h3 {
     margin-top: 50px; } }
 #carpa-iglu-header {
-  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/fulltextil-carpas-iglu-bg01.jpg") !important; }
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.85), rgba(35, 117, 152, 0.85)), url("../img/fulltextil-carpas-iglu-bg01.jpg") !important; }
 
 .carpa-bg02 {
   background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/fulltextil-carpas-iglu-bg02.jpg") !important; }
@@ -8100,5 +8101,18 @@ footer {
 
 .contacto-carpa-iglu {
   background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/fulltextil-carpas-iglu-bg06.jpg") !important; }
+
+#instagram-feed .container-fluid {
+  padding-right: 0px !important;
+  padding-left: 0px !important; }
+
+.eui-widget-title.eapps-instagram-feed-title {
+  font-family: Lato, sans-serif;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #143e50;
+  margin-bottom: 50px; }
 
 /*# sourceMappingURL=app.css.map */
