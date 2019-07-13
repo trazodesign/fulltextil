@@ -7758,7 +7758,7 @@ nav a {
 header {
   width: 100%;
   height: 768px;
-  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.85), rgba(35, 117, 152, 0.85)), url("../img/header-bg.jpg");
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.9), rgba(35, 117, 152, 0.9)), url("../img/fulltextil_toldos_publicitarios_bg06.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -7836,7 +7836,7 @@ header {
   margin: 0 auto; }
 
 #productos .container .row:nth-of-type(1) {
-  margin-top: 175px; }
+  margin-top: 100px; }
 
 #productos .container .row:nth-of-type(2),
 #productos .container .row:nth-of-type(3),
@@ -8101,6 +8101,24 @@ footer {
 
 .contacto-carpa-iglu {
   background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/fulltextil-carpas-iglu-bg06.jpg") !important; }
+
+#toldos-header {
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/fulltextil_toldos_publicitarios_bg01.jpg") !important; }
+
+.toldos-bg02 {
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/fulltextil_toldos_publicitarios_bg02.jpg") !important; }
+
+.toldos-bg03 {
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/fulltextil_toldos_publicitarios_bg03.jpg") !important; }
+
+.toldos-bg04 {
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/fulltextil_toldos_publicitarios_bg04.jpg") !important; }
+
+.toldos-bg05 {
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/fulltextil_toldos_publicitarios_bg05.jpg") !important; }
+
+.toldos-contacto {
+  background-image: linear-gradient(to right, rgba(35, 117, 152, 0.95), rgba(35, 117, 152, 0.95)), url("../img/fulltextil_toldos_publicitarios_bg06.jpg") !important; }
 
 #instagram-feed .container-fluid {
   padding-right: 0px !important;
